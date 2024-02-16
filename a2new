@@ -1,0 +1,41 @@
+import pandas as pd
+df = pd.read_csv('churn.csv')
+--------
+print(df)
+------
+df.duplicated (keep=False).sum()
+-------
+df['customerID'].duplicated (keep=False).sum()
+--------
+df.isna.sum()
+------
+df['TotalCharges'].isna().sum()
+-------
+df['MonthlyCharges'].mean()
+-------
+df[df['Dependents'].str.contains('1@#')]
+df ['Dependents']
+-------
+df.info()
+--------
+srs = df.agg({'MonthlyCharges': 'mean'})
+df[ 'MonthlyCharges'] =df['MonthlyCharges'].fillna(value=srs)
+print(df['MonthlyCharges'])
+
+   import numpy as p\ndft = pd. Dataframe({'user :
+['1','1','1','1','1','2','2','2','2','2'], \n
+'ffa':[1, 3, 2, np.nan, 3, np.nan, 3, np.nan, 2, np.nan, 3],\n
+'food-category':['fruit','fruit','vegetables','vegetables',\n
+'vegetables','fruit','fruit','fruit','vegetables', \n
+'vegetables','fruit']})'''
+   srs = dft.agg({'ffq':'mean'})
+print(srs)
+#df[df['MonthlyCharges'].isnull()]
+#print(srs)
+dft['ffq']==dft['ffq'].fillna(value=srs)
+
+#print(dft['ffq']
+
+df.columns
+
+
